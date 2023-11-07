@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Logochile.png" type="image/png">
+    <title>Chili's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- <link rel="stylesheet" href="css/minificado/minStyles.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/minificado//minStylesCarrusel.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="banner">
+            <picture>
+                <!-- <img class="banner__img" src="images/banner.png" alt="banner cuadros verdes"> -->
+                <!-- <source srcset=".avif" type="image/avif"> -->
+                <source srcset="images/banner.webp" type="image/webp">
+                <img loading="lazy" class="banner__img" decoding="async" src="images/banner.png"
+                    alt="banner cuadros verdes" width="351.89" height="359">
+            </picture>
+        </div>
+
+        <div class="navContainer container">
+            <a class="navContainer__logo">
+                <picture>
+                    <!-- <source srcset=".avif" type="image/avif"> -->
+                    <source srcset="images/Logochile.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" class="navContainer__logo--img" src="images/Logochile.png"
+                        alt="logo chile" width="90" height="45.14">
+                </picture>
+                <!-- <img class="navContainer__logo--img" src="images/Logochile.png" alt="logo chile"> -->
+            </a>
+
+            <div class="buttons">
+                <button class="button__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                        <path d="M21 21l-6 -6"></path>
+                    </svg>
+                </button>
+                <button class="button__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 6l16 0"></path>
+                        <path d="M4 12l16 0"></path>
+                        <path d="M4 18l16 0"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="nav">
+                <div class="navegacion">
+                    <div>
+                        <a class="navegacion__enlace" href="login.html">Iniciar Sesión / <br> Registrarse</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="#aboutUs">Sobre Nosotros</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="#favoritos">Favoritos</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="#reservacion">Reservación</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="#mesas">Escoge tu mesa</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="#contacto">Contacto</a>
+                    </div>
+
+                </div>
+
+                <button class="nav__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M18 6l-12 12"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+
+        <div class="header__information container">
+            <div class="header__container">
+                <picture>
+                    <!-- <source srcset=".avif" type="image/avif"> -->
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" class="header__container--img" src="images/logo.png"
+                        alt="logo Chili's" width="200" height="80">
+                </picture>
+                <!-- <img class="header__container--img" src="images/logo.png" alt="logo Chili's"> -->
+            </div>
+
+            <h1 class="header__title">Así es como sabe un <span class="header__title--span">buen</span> momento</h1>
+        </div>
+    </header>
+
+    <section id="aboutUs" class="aboutUs container">
+        <div class="aboutUs__imgContainer">
+            <picture>
+                <!-- <source srcset=".avif" type="image/avif"> -->
+                <source srcset="images/about.webp" type="image/webp">
+                <img loading="lazy" class="aboutUs__imgContainer--img" src="images/about.png" alt="imagen persona"
+                    width="341.05" height="314.77">
+            </picture>
+            <!-- <img class="aboutUs__imgContainer--img" src="images/about.png" alt="imagen persona"> -->
+        </div>
+
+        <div class="aboutUs__information">
+            <h2 class="aboutUs__title">Sobre nosotros</h2>
+            <p class="aboutUs__parrafo">Chili’s es el representante por excelencia de la comida del suroeste americano.
+                Chili’s fue creado en 1975 en Green Ville, Dallas, desde entonces ha llevado la comida del suroeste a
+                todo el territorio de Estados Unidos y 32 países más. </p>
+        </div>
+    </section>
+
+    <section id="favoritos" class="carrusel__container">
+        <h2 class="carrusel__title">Los favoritos</h2>
+        <p class="carrusel__parrafo">Encuentra aquí los platillos mas pedidos por nuestros clientes </p>
+        <div class="carrusel">
+            <div class="atras">
+                <img id="atras" src="images/atras.svg" alt="atras" loading="lazy">
+            </div>
+
+            <div class="imagenes">
+                <div class="imgContainer">
+                    <div id="img1" class="contenedorImagenesCarrusel">
+                        <picture>
+                            <!-- <source srcset=".avif" type="image/avif"> -->
+                            <source srcset="images/alas.webp" type="image/webp">
+                            <img loading="lazy" decoding="async" class="img" src="images/alas.jpeg" alt="imagen 1"
+                                width="263" height="150.28">
+                        </picture>
+                        <!-- <img class="img" src="images/alas.jpeg" alt="imagen 1" loading="lazy"> -->
+                    </div>
+                    <div id="img2" class="contenedorImagenesCarrusel">
+                        <picture>
+                            <!-- <source srcset=".avif" type="image/avif"> -->
+                            <source srcset="images/Hamburguesa.webp" type="image/webp">
+                            <img loading="lazy" decoding="async" class="img" src="images/Hamburguesa.jpeg"
+                                alt="imagen 2" width="263" height="150.28">
+                        </picture>
+                        <!-- <img class="img" src="images/Hamburguesa.jpeg" alt="imagen 1" loading="lazy"> -->
+                    </div>
+                    <div id="img3" class="contenedorImagenesCarrusel">
+                        <picture>
+                            <!-- <source srcset=".avif" type="image/avif"> -->
+                            <source srcset="images/costillas.webp" type="image/webp">
+                            <img loading="lazy" decoding="async" class="img" src="images/costillas.jpeg" alt="imagen 3"
+                                width="263" height="150.28">
+                        </picture>
+                        <!-- <img class="img" src="images/costillas.jpeg" alt="imagen 1" loading="lazy"> -->
+                    </div>
+                </div>
+
+                <div id="texto" class="texto">
+                    <h3>Comidas</h3>
+                </div>
+            </div>
+
+            <div class="adelante" id="adelante">
+                <img src="images/adelante.svg" alt="adelante" loading="lazy">
+            </div>
+        </div>
+
+        <div class="puntos" id="puntos"></div>
+    </section>
+
+    <section id="mesa" class="carrusel__container">
+        <h2 class="carrusel__title">Escoge tu mesa</h2>
+        <div class="carrusel">
+            <div class="imagenes">
+                <div class="imgContainer">
+                    <div id="img1" class="contenedorImagenesCarrusel">
+                        <p class="carrusel__parrafo">Opción 1</p>
+                        <picture>
+                            <source srcset="images/Mesa2.jpg" type="image/webp">
+                            <img loading="lazy" decoding="async" class="img" src="images/Mesa2.jpg" alt="Opción1"
+                                width="200" height="150">
+                        </picture>
+                        <p class="carrusel__parrafo">Para 2 personas</p>
+                    </div>
+                    <div id="img2" class="contenedorImagenesCarrusel">
+                        <p class="carrusel__parrafo">Opción 2</p>
+                        <picture>
+                            <source srcset="images/Mesa4.jpg" type="image/webp">
+                            <img loading="lazy" decoding="async" class="img" src="images/Mesa4.jpg" alt="Opción2"
+                                width="200" height="150">
+                        </picture>
+                        <p class="carrusel__parrafo">Para 4 personas</p>
+                    </div>
+                    <div id="img3" class="contenedorImagenesCarrusel">
+                        <p class="carrusel__parrafo">Opción 3</p>
+                        <picture>
+                            <source srcset="images/Mesa8.jpg" type="image/webp">
+                            <img loading="lazy" decoding="async" class="img" src="images/Mesa8.jpg" alt="Opción3"
+                                width="200" height="150">
+                        </picture>
+                        <p class="carrusel__parrafo">Para 8 personas</p>
+                    </div>
+                    <div id="img4" class="contenedorImagenesCarrusel">
+                        <p class="carrusel__parrafo">Opción 4</p>
+                        <picture>
+                            <source srcset="images/Mesa12.jpg" type="image/webp">
+                            <img loading="lazy" decoding="async" class="img" src="images/Mesa12.jpg" alt="Opción4"
+                                width="200" height="150">
+                        </picture>
+                        <p class="carrusel__parrafo">Para 12 personas</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="reservacion" class="reservacion container">
+        <form class="form" id="form">
+            <h2 class="form__title">Reservaciones</h2>
+            <div class="form__div">
+                <select class="form__input form__select" name="MesaID" id="mesas">
+                    <option class="form__select--option" value="" selected disabled> Seleccione una Mesa </option>
+                    <option class="form__select--option" value="1"> Opción 1 </option>
+                    <option class="form__select--option" value="2"> Opción 2 </option>
+                    <option class="form__select--option" value="3"> Opción 3 </option>
+                    <option class="form__select--option" value="4"> Opción 4 </option>
+                </select>
+            </div>
+            <div class="form__div">
+                <input class="form__input" type="datetime-local" name="FechaHoraReserva" id="fecha">
+            </div>
+            <div class="form__div">
+                <input class="form__input" name="NumeroPersonas" id="nPersonas" type="number"
+                    placeholder="Número de personas" min="1" max="10">
+            </div>
+            <div class="form__div">
+                <input class="form__input" name="Preferencias" id="preferencias" type="text" placeholder="Preferencias">
+            </div>
+            <div class="form__div">
+                <textarea class="form__input" placeholder="Comentarios" name="Comentarios" id="comentarios" cols="30"
+                    rows="5"></textarea>
+            </div>
+
+            <div id="inputContainer">
+                <div id="inputMensajes"></div>
+                <input id="inputSubmit" class="form__input form__input--submit" type="submit" value="Enviar">
+            </div>
+        </form>
+
+        <div class="reservacion__imgContainer">
+            <picture>
+                <!-- <source srcset=".avif" type="image/avif"> -->
+                <source srcset="images/fotoDelLocal.webp" type="image/webp">
+                <img loading="lazy" decoding="async" class="reservacion__imgContainer--img"
+                    src="images/fotoDelLocal.jpg" alt="Foto del local">
+            </picture>
+            <!-- <img class="reservacion__imgContainer--img" src="images/fotoDelLocal.jpg" alt="Foto del local" loading="lazy"> -->
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer">
+        <div class="footer__container container">
+            <ul class="direccion">
+                <li class="direccion__container">
+                    <div class="direccion__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-filled"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            fill="#none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                                stroke-width="0" fill="#c01a00"></path>
+                        </svg>
+                    </div>
+
+                    <p class="direccion__texto">Chili's Universidad 767, Av. Universidad 767, Col del Valle Sur, Benito
+                        Juárez, 03100 Ciudad de México, CDMX</p>
+                </li>
+                <!-- acaba li -->
+
+                <li class="direccion__container">
+                    <div class="direccion__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-filled"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            fill="#c01a00" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z"
+                                stroke-width="0" fill="#c01a00"></path>
+                        </svg>
+                    </div>
+
+                    <p class="direccion__texto">Teléfono : 5601 6751</p>
+                </li>
+                <!-- acaba li -->
+
+                <li class="direccion__container">
+                    <div class="direccion__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            fill="#c01a00" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+                                stroke-width="0" fill="#c01a00"></path>
+                            <path
+                                d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+                                stroke-width="0" fill="#c01a00"></path>
+                        </svg>
+
+                    </div>
+
+                    <p class="direccion__texto">Email : Chili´s@gmail.com</p>
+                </li>
+                <!-- acaba li -->
+            </ul>
+
+            <div class="footer__imgContainer">
+
+                <picture>
+                    <!-- <source srcset=".avif" type="image/avif"> -->
+                    <source srcset="images/map.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" class="footer__imgContainer--img" src="images/map.png"
+                        alt="mapa con la localización del restaurante">
+                </picture>
+                <!-- <img class="footer__imgContainer--img" src="images/map.png" alt="mapa con la localización del restaurante" loading="lazy"> -->
+            </div>
+        </div>
+
+        <div class="footer__decoracion"></div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/logicCarrusel.js"></script>
+</body>
+
+</html>

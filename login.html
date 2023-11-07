@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chili's | Iniciar Sesión</title>
+    <link rel="shortcut icon" href="images/Logochile.webp" type="image/x-icon" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/loginStyles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navContainer container">
+            <a href="/" class="navContainer__logo">
+                <picture>
+                    <!-- <source srcset=".avif" type="image/avif"> -->
+                    <source srcset="images/Logochile.webp" type="image/webp">
+                    <img loading="lazy" decoding="async" class="navContainer__logo--img" src="images/Logochile.png" alt="logo chile" width="90" height="45.14">
+                </picture>
+                <!-- <img class="navContainer__logo--img" src="images/Logochile.png" alt="logo chile"> -->
+            </a>
+
+            <div class="buttons">
+                <button class="button__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                        <path d="M21 21l-6 -6"></path>
+                    </svg>
+                </button>
+                <button class="button__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 6l16 0"></path>
+                        <path d="M4 12l16 0"></path>
+                        <path d="M4 18l16 0"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="nav">
+                <div class="navegacion">
+                    <div>
+                        <a class="navegacion__enlace" href="login.html">Iniciar Sesión / <br> Registrarse</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="/">Inicio</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="index.html#aboutUs">Sobre Nosotros</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="index.html#favoritos">Favoritos</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="index.html#reservacion">Reservación</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="index.html#contacto">Contacto</a>
+                    </div>
+                    <div>
+                        <a class="navegacion__enlace" href="index.html#mesas">Escoge tu mesa</a>
+                    </div>
+                </div>
+
+                <button class="nav__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M18 6l-12 12"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form id="formLogin" class="formulario__login" novalidate>
+                    <h2>Iniciar Sesión</h2>
+                    <div>
+                        <input name="correo" type="text" placeholder="Correo Electronico">
+                    </div>
+
+                    <div>
+                        <input name="contrasena" type="password" placeholder="Contraseña">
+                    </div>
+
+                    <div id="inputContainer">
+                        <div id="inputMensajes"></div>
+                        <button class="inputSubmit">Entrar</button>
+                    </div>
+                </form>
+
+                <!--Register-->
+                <form id="formSignup" class="formulario__register" novalidate>
+                    <h2>Regístrarse</h2>
+                    <div>
+                        <input name="nombre" type="text" placeholder="Nombre">
+                    </div>
+
+                    <div>
+                        <input name="apellido" type="text" placeholder="Apellido">
+                    </div>
+
+                    <div>
+                        <input name="correo" type="text" placeholder="Correo Electronico">
+                    </div>
+
+                    <div>
+                        <input name="telefono" type="number" placeholder="Telefono">
+                    </div>
+
+                    <div>
+                        <input name="contrasena" type="password" placeholder="Contraseña">
+                    </div>
+                    
+                    <div id="inputContainer">
+                        <div id="inputMensajes"></div>
+                        <button class="inputSubmit">Regístrarse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/loginPlantilla.js"></script>
+    <script src="js/appLogin.js"></script>
+</body>
+</html>

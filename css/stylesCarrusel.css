@@ -1,0 +1,120 @@
+
+.carruselContianer{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .imagenes{
+        width: 100%;
+    }
+
+    .imgContainer{
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+.imgContainer{
+    width: 100%;
+}
+
+.contenedorImagenesCarrusel{
+    width: 100%;
+}
+
+.img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    width: 100%;
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: cover;
+    filter: saturate(175%);
+}
+
+.texto{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    backdrop-filter: blur(2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+}
+
+@media (min-width: 1200px) {
+    .texto{
+        bottom: 0;
+    }
+}
+
+.texto h3{
+    color: white;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.texto p{
+    align-items: center;
+    padding: 20px;
+    color:white;
+    font-size: 0px;
+    font-weight: 300;
+}
+
+.imagenes .texto{
+    width: 100%;
+    height: 3rem;
+}
+
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p{
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: black;
+}
+
+.puntos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5E17EB ;
+}
+
+.atras, .adelante{
+    cursor: pointer;
+}
+
+.puntos p{
+    margin-bottom: 0;
+}
